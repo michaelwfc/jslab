@@ -1,3 +1,13 @@
+.idea/
+.pycache/
+# dependencies
+examples/
+external_libs/
+pretrained_model/
+data/
+output/
+corpus/
+
 # Logs
 logs
 *.log
