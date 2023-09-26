@@ -1,3 +1,4 @@
+// https://www.codingnepalweb.com/create-chatbot-html-css-javascript/
 const chatbotToggler = document.querySelector(".chatbot-toggler");
 const closeBtn = document.querySelector(".close-btn");
 const chatbox = document.querySelector(".chatbox");
