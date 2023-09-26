@@ -6,6 +6,8 @@
     "workbench.settings.editor": "json",
     "workbench.iconTheme": "vscode-icons",
     "vsicons.dontShowNewVersionMessage": true,
+    // "javascript.format."
+    
 
 
     "terminal.integrated.profiles.windows": {

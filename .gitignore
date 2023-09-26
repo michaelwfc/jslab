@@ -1,6 +1,6 @@
 .idea/
 .pycache/
-# dependencies
+complete-javascript-course-master/
 examples/
 external_libs/
 pretrained_model/
