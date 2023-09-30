@@ -10,6 +10,29 @@
             "name": "launch Charome on localhost",
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}",
-        }
+        },
+        {
+            "name": "Python: launch Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            // "cwd":"${workspaceFolder}",
+            "env":{"PYTHONPATH":"${workspaceFolder}${pathSeparator}src"}
+
+        },
+
+        { 
+            "name": "Python: debug Current File", 
+            "type": "python", 
+            "request": "launch", 
+            "program": "${file}", 
+            // import to setting when do unit test 
+            "purpose": ["debug-test"],  
+            "console": "integratedTerminal", 
+            "justMyCode": false, 
+           
+        } 
     ]
 }

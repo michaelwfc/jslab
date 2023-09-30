@@ -6,16 +6,30 @@
     "workbench.settings.editor": "json",
     "workbench.iconTheme": "vscode-icons",
     "vsicons.dontShowNewVersionMessage": true,
-    // "javascript.format."
-    
-
-
     "terminal.integrated.profiles.windows": {
         "Git Bash": {
             "source": "Git Bash",
         }
     },
-    "terminal.integrated.defaultProfile.windows": "Git Bash"
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+     // Specifies an optional working directory for tests.
+     "python.defaultInterpreterPath": "C:\\Users\\Administrator\\miniconda3\\envs\\py39",
+     "python.testing.cwd": "src/",
+     "python.testing.pytestEnabled": true,
+     //Indicates whether to automatically add search paths based on some predefined names (like src)
+     "python.analysis.autoSearchPaths":true,
+     //Specifies extra search paths for import resolution.
+     "python.analysis.extraPaths": ["${workspaceFolder}\\src\\backend\\src"],
+     "python.linting.enabled": true,
+     "python.formatting.provider": "autopep8",
+     "python.linting.pylintEnabled": true,
+     "[python]": {
+       "editor.formatOnType": true
+     },
 
 
 

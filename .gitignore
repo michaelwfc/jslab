@@ -1,5 +1,6 @@
 .idea/
 .pycache/
+__pycache__/
 complete-javascript-course-master/
 examples/
 external_libs/
