@@ -1,10 +1,10 @@
 """server.py
 """
-from typing import Text
+from typing import Text, Dict, List
 from fastapi import FastAPI
 import uvicorn
 from openai_utils import construct_messages, get_chat_completion
-
+from constants import GPT_3DOT5_TURBO
 app = FastAPI()
 
 
@@ -14,7 +14,7 @@ def hello():
 
 
 @app.post("/chat/openai")
-def chat_openai(query: str) -> Text:
+def chat_openai(messages: List[Dict], model: Text = GPT_3DOT5_TURBO) -> Text:
     """chat with openai api
 
     Args:
@@ -23,8 +23,7 @@ def chat_openai(query: str) -> Text:
     Returns:
         _description_
     """
-    messages = construct_messages(query=query)
-    response = get_chat_completion(messages=messages)
+    response = get_chat_completion(messages=messages, model=model)
     return response
 
 

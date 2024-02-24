@@ -18,11 +18,11 @@ def set_working_dir(project_name: Union[Text, None] = None):
     else:
         script_path = os.path.abspath(__file__)
         python_pro_dir = Path(script_path).parent.absolute()
-        project_dir = Path(script_path).parent.parent.parent.parent.absolute()
-    os.chdir(project_dir)
+        # project_dir = Path(script_path).parent.parent.parent.parent.absolute()
+    os.chdir(python_pro_dir)
     sys.path.extend([str(python_pro_dir)])
     logger.info(f"working_dir={os.getcwd()}")
-    return project_dir
+    return python_pro_dir
 
 
 def load_env_variables_from_dotenv():

@@ -8,6 +8,7 @@ pretrained_model/
 data/
 output/
 corpus/
+tmp/
 
 # Logs
 logs

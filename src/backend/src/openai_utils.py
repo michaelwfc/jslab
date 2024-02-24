@@ -47,9 +47,9 @@ def get_chat_completion(messages: List[Dict], model=GPT_3DOT5_TURBO,
         #     print(str(response.choices[0].message))
         content = response.choices[0].message["content"]
 
-        token_dict = {
-            'prompt_tokens': response['usage']['prompt_tokens'],
-            'completion_tokens': response['usage']['completion_tokens'],
-            'total_tokens': response['usage']['total_tokens'],
-        }
+        # token_dict = {
+        #     'prompt_tokens': response['usage']['prompt_tokens'],
+        #     'completion_tokens': response['usage']['completion_tokens'],
+        #     'total_tokens': response['usage']['total_tokens'],
+        # }
     return content
