@@ -5,6 +5,15 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type":"node",
+      "request":"launch",
+      "name":"node debugger current file",
+      "program": "${file}",
+      "console": "integratedTerminal"
+
+    },
+
+    {
       "type": "chrome",
       "request": "launch",
       "name": "launch Charome on localhost",
